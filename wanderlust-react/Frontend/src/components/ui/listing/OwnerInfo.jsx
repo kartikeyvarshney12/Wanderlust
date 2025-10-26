@@ -12,7 +12,7 @@ const OwnerInfo = ({ owner, listingTitle, canModifyListing }) => {
                     <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white shadow-sm">
                         <img
                             src={owner.profilePhoto}
-                            alt={owner.name}
+                            alt="Kartikey Varshney"
                             className="w-full h-full object-cover"
                         />
                     </div>
@@ -23,14 +23,14 @@ const OwnerInfo = ({ owner, listingTitle, canModifyListing }) => {
                 )}
                 <div className="ml-3">
                     <span className="text-sm text-gray-500">Hosted by</span>
-                    <h3 className="font-medium text-gray-800">{owner.name}</h3>
+                    <h3 className="font-medium text-gray-800">Kartikey Varshney</h3>
                 </div>
             </div>
             
             <div className="ml-auto">
                 {!canModifyListing && (
                     <a
-                        href={`mailto:${owner.email}?subject=Inquiry about ${listingTitle}`}
+                        href={`mailto:kartikeyvarshneyofficial@gmail.com?subject=Inquiry about ${listingTitle}`}
                         className="flex items-center gap-2 px-4 py-1.5 bg-blue-500 text-white rounded-md hover:bg-blue-600 text-sm"
                     >
                         <IconMail size={18} />
@@ -53,4 +53,4 @@ OwnerInfo.propTypes = {
     canModifyListing: PropTypes.bool.isRequired
 };
 
-export default OwnerInfo; 
+export default OwnerInfo;
